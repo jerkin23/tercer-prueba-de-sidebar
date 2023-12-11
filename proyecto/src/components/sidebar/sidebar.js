@@ -12,8 +12,9 @@ const Sidebar = () => {
   };
 
   return (
-    <div className={`sidebar ${sidebarActive ? 'active' : ''}`} data-testid="Sidebar">
+
       <div className='sidebard'>
+            <div className={`sidebar ${sidebarActive ? 'active' : ''}`} data-testid="Sidebar">
         <div className='contenido'>
           <div className='logo'>
             <span className='icono'><IoPlanetOutline /></span>
@@ -35,14 +36,14 @@ const Sidebar = () => {
               <li>
                 <a href='#'>
                   <span className="iconos" onClick={handleButtonClick}><IoBookOutline /></span>
-                  <span className="titulo"> Notes </span>
+                  <span className="titulos"> Notes </span>
                 </a>
                 <span className='tool'>Notes</span>
               </li>
               <li>
                 <a href='#'>
                   <span className="iconos" onClick={handleButtonClick}><IoDocumentTextOutline /></span>
-                  <span className="titulo">User Manual </span>
+                  <span className="titulos">User Manual </span>
                 </a>
                 <span className='tool'>Manual</span>
               </li>
@@ -55,16 +56,17 @@ const Sidebar = () => {
                     <div className="cierre">Sign Out</div>
                     <div className="despedida">Thank you for visiting us</div>
                   </div>
-                  <span className='logout' onClick={handleButtonClick}><IoLogOutOutline /></span>
                 </div>
+                <span className='logout'><IoLogOutOutline /></span>
               </div>
-            </div>
-            <div className='home'>
-              <div className='textoPrueba'>home content</div>
             </div>
           </div>
         </div>
+         <div className='home'>
+              <div className='textoPrueba'>home content</div>
+            </div>
       </div>
+      
     </div>
   );
 };

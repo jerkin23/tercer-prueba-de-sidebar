@@ -165,9 +165,6 @@ opacity: 1;
 pointer-events: none;
 }
 
-
-
-
 .navegacion ul li a:hover{
     /*color de letras, focus*/
     color: #11101d;

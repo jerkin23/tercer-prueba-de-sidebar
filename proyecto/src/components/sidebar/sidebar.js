@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './sidebar.css';
-import { IoSearchOutline, IoMenuOutline, IoLogOutOutline,  IoDocumentTextOutline, IoPlanetOutline, IoBookOutline } from 'react-icons/io5';
+import { IoSearchOutline,IoMailOutline, IoInformationCircleOutline, IoMenuOutline, IoLogOutOutline,  IoDocumentTextOutline, IoPlanetOutline, IoBookOutline } from 'react-icons/io5';
 import miImagen from './assets/blank-profile-picture-973460_1280-580x580.jpg';
 
 // instalar los iconos 
@@ -38,13 +38,6 @@ return (
             <ul>
               <li>
                 <a href='#'>
-                  <span className="lupa" onClick={handleButtonClick}><IoSearchOutline /></span>
-                  <input type='text' placeholder="Search.." />
-                </a>
-                <span className='tool'>Search</span>
-              </li>
-              <li>
-                <a href='#'>
                   <span className="iconos" onClick={handleButtonClick}><IoBookOutline /></span>
                   <span className="titulos"> Notes </span>
                 </a>
@@ -56,6 +49,20 @@ return (
                   <span className="titulos">User Manual </span>
                 </a>
                 <span className='tool'>Manual</span>
+              </li>
+              <li>
+                <a href='#'>
+                  <span className="iconos" onClick={handleButtonClick}><IoInformationCircleOutline/></span>
+                  <span className="titulos"> contacts </span>
+                </a>
+                <span className='tool'>Contacts</span>
+              </li>
+              <li>
+                <a href='#'>
+                  <span className="iconos" onClick={handleButtonClick}><IoMailOutline /></span>
+                  <span className="titulos"> About us </span>
+                </a>
+                <span className='tool'>About us</span>
               </li>
             </ul>
 
@@ -81,7 +88,15 @@ return (
 
 
             <div className='home'>
-          <div className='textoPrueba'>home content</div>
+          <div className='textoPrueba'
+          
+          
+          
+          >home content
+          
+          
+          
+          </div>
         </div>
       </div>
     </div>
